@@ -80,16 +80,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-- Project Maintainer: [Your Name](mailto:your.email@example.com)
-- Support Email: support@nyaysahayak.org
-- Helpline: 1800-XXX-XXXX
-
 ## Acknowledgments
 
 - Legal experts who contributed to form templates
