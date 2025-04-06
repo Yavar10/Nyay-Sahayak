@@ -461,6 +461,259 @@
                 }, 2000);
             }
         });
+
+
+        // Example cases for Nyay Sahayak Legal Application Assistant
+// These can be added to the script section of your HTML
+
+// Sample case data
+const sampleCases = [
+  {
+    id: 1,
+    title: "Consumer Complaint - Faulty Electronics",
+    language: "Hindi",
+    description: "मैंने 10 जनवरी 2025 को TechZone से एक लैपटॉप खरीदा था, जिसकी कीमत ₹65,000 थी। खरीदने के केवल 45 दिन बाद, लैपटॉप का डिस्प्ले काम करना बंद कर दिया। मैंने कंपनी के कस्टमर केयर से संपर्क किया और उन्होंने मुझे सर्विस सेंटर भेजा। सर्विस सेंटर ने बताया कि डिस्प्ले बदलने में 21 दिन लगेंगे, जो कंपनी की 7-दिन मरम्मत गारंटी का उल्लंघन है। तीन बार फॉलो-अप करने के बाद भी समस्या हल नहीं हुई है।",
+    summary: "यह एक उपभोक्ता शिकायत है जो एक खराब लैपटॉप से संबंधित है जो खरीदने के 45 दिनों के भीतर काम करना बंद कर दिया। विक्रेता ने वारंटी के तहत मरम्मत की 7-दिन की गारंटी का उल्लंघन किया है और 21 दिनों की देरी का अनुमान लगाया है। उपभोक्ता ने तीन बार फॉलो-अप किया है, लेकिन समस्या अभी तक हल नहीं हुई है।",
+    application: `आवेदन संख्या: CNS-2025-04XX
+आवेदन दिनांक: 6 अप्रैल, 2025
+
+सेवा में,
+उपभोक्ता विवाद निवारण आयोग
+नई दिल्ली
+
+विषय: उपभोक्ता संरक्षण अधिनियम 2019 के तहत शिकायत
+
+महोदय/महोदया,
+
+मैं, [आवेदक का नाम], इस पत्र के माध्यम से TechZone के खिलाफ शिकायत दर्ज करना चाहता/चाहती हूं।
+
+शिकायत का विवरण:
+1. खरीद दिनांक: 10 जनवरी, 2025
+2. उत्पाद: लैपटॉप (मॉडल संख्या: XX)
+3. कीमत: ₹65,000
+4. विक्रेता: TechZone, [पता]
+5. वारंटी अवधि: 1 वर्ष
+
+समस्या:
+- खरीदने के 45 दिनों के भीतर लैपटॉप का डिस्प्ले काम करना बंद कर दिया।
+- कंपनी ने 7-दिन मरम्मत गारंटी का उल्लंघन किया है।
+- सर्विस सेंटर ने मरम्मत में 21 दिन लगने का अनुमान लगाया है।
+- तीन बार फॉलो-अप करने के बावजूद कोई समाधान नहीं मिला है।
+
+मांग:
+1. लैपटॉप की तत्काल मरम्मत या प्रतिस्थापन
+2. मानसिक परेशानी और समय की हानि के लिए ₹10,000 का मुआवजा
+3. कानूनी खर्चों की प्रतिपूर्ति
+
+धन्यवाद,
+
+[आवेदक का नाम]
+[संपर्क विवरण]`
+  },
+  {
+    id: 2,
+    title: "Property Boundary Dispute",
+    language: "English",
+    description: "I purchased a plot (Survey No. 123/45) in Greenville Township on May 5, 2024, with clear boundaries mentioned in the sale deed. My neighbor, Mr. Singh (owner of Survey No. 123/46), has recently constructed a wall that encroaches approximately 3 feet into my property. I have attempted to resolve this issue amicably through two meetings (on Feb 10 and Mar 15, 2025) and a written notice dated March 20, 2025, but Mr. Singh refuses to acknowledge the encroachment. I have the original survey documents and recent photographs showing the encroachment.",
+    summary: "This is a property boundary dispute case where the applicant's neighbor has constructed a wall encroaching approximately 3 feet into the applicant's land. The applicant has made multiple attempts to resolve the issue amicably, including two in-person meetings and a written notice, but the neighbor refuses to acknowledge the encroachment. The applicant possesses supporting documentation including the original survey report and photographic evidence.",
+    application: `Application No: PROP-2025-04XX
+Date: April 6, 2025
+
+To,
+The Civil Court Judge
+District Court, [District]
+
+Subject: Suit for Declaration of Title and Mandatory Injunction
+
+Respected Sir/Madam,
+
+I, [Applicant Name], would like to file a suit against Mr. Singh regarding a property boundary dispute.
+
+Details of the Dispute:
+1. I am the rightful owner of plot bearing Survey No. 123/45 located in Greenville Township, purchased on May 5, 2024.
+2. The defendant, Mr. Singh, owns the adjacent plot bearing Survey No. 123/46.
+3. The defendant has constructed a wall that encroaches approximately 3 feet into my property.
+4. I attempted to resolve this dispute through meetings on February 10 and March 15, 2025.
+5. I sent a written notice on March 20, 2025, which has been ignored.
+
+Prayer:
+1. Declaration that I am the rightful owner of the entire area of Survey No. 123/45
+2. Mandatory injunction directing the defendant to remove the encroaching wall
+3. Costs of the suit and any other relief deemed fit
+
+I have attached the following documents:
+1. Copy of Sale Deed
+2. Original Survey Report
+3. Recent photographs showing encroachment 
+4. Copy of the written notice sent to the defendant
+
+Yours faithfully,
+
+[Applicant Name]
+[Contact Details]`
+  },
+  {
+    id: 3,
+    title: "RTI Application - Public Infrastructure",
+    language: "Tamil",
+    description: "எங்கள் பகுதியில் (ராஜீவ் நகர், மதுரை) கடந்த ஆண்டு (ஜூன் 2024) அறிவிக்கப்பட்ட சாலை மேம்பாட்டுத் திட்டம் இன்னும் தொடங்கப்படவில்லை. நகராட்சி ஒரு கோடி ரூபாய் ஒதுக்கியதாக அறிவித்தது, ஆனால் எந்த வேலையும் நடைபெறவில்லை. இந்த திட்டத்திற்கான விரிவான திட்டம், ஒதுக்கப்பட்ட நிதி மற்றும் தாமதத்திற்கான காரணங்கள் குறித்த தகவல்களைப் பெற நான் விரும்புகிறேன்.",
+    summary: "இது ஒரு தகவல் உரிமைச் சட்ட (RTI) விண்ணப்பமாகும், இதில் விண்ணப்பதாரர் ராஜீவ் நகர், மதுரையில் ஜூன் 2024 இல் அறிவிக்கப்பட்ட சாலை மேம்பாட்டுத் திட்டத்தின் நிலை குறித்த தகவல்களைக் கோருகிறார். நகராட்சி ஒரு கோடி ரூபாய் ஒதுக்கியதாக அறிவித்துள்ளது, ஆனால் எந்த வேலையும் தொடங்கப்படவில்லை. விண்ணப்பதாரர் திட்டத்தின் விவரங்கள், ஒதுக்கீடு செய்யப்பட்ட நிதி மற்றும் தாமதத்திற்கான காரணங்களை அறிய விரும்புகிறார்.",
+    application: `விண்ணப்ப எண்: RTI-2025-04XX
+தேதி: ஏப்ரல் 6, 2025
+
+பெறுநர்,
+பொதுத் தகவல் அலுவலர்
+மதுரை மாநகராட்சி
+மதுரை, தமிழ்நாடு
+
+பொருள்: தகவல் உரிமைச் சட்டம் 2005-ன் கீழ் விண்ணப்பம்
+
+மதிப்பிற்குரிய ஐயா/அம்மா,
+
+நான், [விண்ணப்பதாரரின் பெயர்], தகவல் உரிமைச் சட்டம் 2005-ன் பிரிவு 6-ன் கீழ் பின்வரும் தகவல்களை வழங்குமாறு கேட்டுக்கொள்கிறேன்:
+
+தேவையான தகவல்:
+1. ராஜீவ் நகர், மதுரை பகுதியில் ஜூன் 2024-ல் அறிவிக்கப்பட்ட சாலை மேம்பாட்டுத் திட்டத்தின் விரிவான திட்ட அறிக்கை
+2. இந்த திட்டத்திற்கு ஒதுக்கப்பட்ட நிதியின் விவரங்கள்
+3. இதுவரை செலவழிக்கப்பட்ட தொகை (ஏதேனும் இருந்தால்)
+4. திட்டத்தின் தற்போதைய நிலை
+5. திட்டத்தின் தாமதத்திற்கான காரணங்கள்
+6. திட்டத்தை செயல்படுத்துவதற்கான திருத்தப்பட்ட காலக்கெடு
+
+தேவையான கட்டணத்தை செலுத்த நான் தயாராக உள்ளேன். தகவல் தமிழில் வழங்கப்பட வேண்டும்.
+
+நன்றி,
+
+[விண்ணப்பதாரரின் பெயர்]
+[தொடர்பு விவரங்கள்]`
+  }
+];
+
+// Function to display a sample case
+function displaySampleCase(caseId) {
+  const selectedCase = sampleCases.find(c => c.id === caseId);
+  
+  if (selectedCase) {
+    // Find the active language button
+    const languageBtn = document.querySelector(`.language-btn[data-language="${selectedCase.language}"]`) || 
+                        document.querySelector(`.language-btn:contains('${selectedCase.language}')`);
+    
+    // Activate the correct language
+    if (languageBtn) {
+      document.querySelectorAll('.language-btn').forEach(b => b.classList.remove('active'));
+      languageBtn.classList.add('active');
+    }
+    
+    // Set the case description in textarea
+    document.querySelector('textarea').value = selectedCase.description;
+    
+    // Update the case summary section
+    document.querySelector('.summary-section').innerHTML = 
+      `<h4>Case Summary:</h4>
+       <p>${selectedCase.summary}</p>`;
+       
+    // Update the application preview
+    document.querySelector('.form-preview:not(.summary-section)').innerHTML = 
+      `<h4>Legal Application:</h4>
+       <pre style="white-space: pre-wrap; font-family: 'Courier New', monospace;">${selectedCase.application}</pre>`;
+  }
+}
+
+// Function to add sample case selection UI
+function addSampleCaseSelector() {
+  // Create the sample case selection UI
+  const sampleSection = document.createElement('div');
+  sampleSection.className = 'sample-cases';
+  sampleSection.innerHTML = `
+    <h3>Sample Cases</h3>
+    <p>Try with these pre-filled examples:</p>
+    <div class="input-controls sample-btns">
+      ${sampleCases.map(c => `<button class="secondary sample-case-btn" data-case-id="${c.id}">${c.title}</button>`).join('')}
+    </div>
+  `;
+  
+  // Insert before the input section
+  const inputSection = document.querySelector('.input-section');
+  inputSection.parentNode.insertBefore(sampleSection, inputSection);
+  
+  // Add event listeners to sample case buttons
+  document.querySelectorAll('.sample-case-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const caseId = parseInt(this.getAttribute('data-case-id'));
+      displaySampleCase(caseId);
+    });
+  });
+  
+  // Add some styles
+  const style = document.createElement('style');
+  style.textContent = `
+    .sample-cases {
+      margin-bottom: 1.5rem;
+    }
+    .sample-btns {
+      flex-wrap: wrap;
+    }
+    .sample-case-btn {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+// Button to add another language-specific attribute to language buttons
+function enhanceLanguageButtons() {
+  const languageBtns = document.querySelectorAll('.language-btn');
+  const languages = ['Hindi', 'Bengali', 'Tamil', 'Telugu', 'Marathi', 'Gujarati', 'Kannada', 'Malayalam', 'Punjabi', 'English'];
+  
+  languageBtns.forEach((btn, index) => {
+    if (index < languages.length) {
+      btn.setAttribute('data-language', languages[index]);
+    }
+  });
+}
+
+// Call these functions when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+  enhanceLanguageButtons();
+  addSampleCaseSelector();
+  
+  // Update Generate Application button to show a sample case
+  document.querySelector('button:contains("Generate Application")').addEventListener('click', function() {
+    const textarea = document.querySelector('textarea');
+    if (textarea.value.trim() === '') {
+      alert('Please describe your case or select a sample case first.');
+    } else {
+      // Find if text matches any sample case
+      const matchedCase = sampleCases.find(c => c.description.includes(textarea.value.substring(0, 20)));
+      
+      if (matchedCase) {
+        displaySampleCase(matchedCase.id);
+      } else {
+        alert('Processing your case details... Please wait.');
+        setTimeout(() => {
+          alert('Generated a basic application template. Please review and edit as needed.');
+          document.querySelector('.summary-section').innerHTML = 
+            '<h4>Case Summary:</h4>' +
+            '<p>This appears to be a case that requires further details. Please add more specific information about dates, parties involved, and the exact nature of your legal matter.</p>';
+          
+          document.querySelector('.form-preview:not(.summary-section)').innerHTML =
+            '<h4>Legal Application:</h4>' +
+            '<p>A basic application template has been generated. Please edit to add your specific details.</p>';
+        }, 2000);
+      }
+    }
+  });
+});
+
+
+
     </script>
+
+
+
+
+
+
 </body>
 </html>
