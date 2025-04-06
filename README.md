@@ -7,7 +7,7 @@
 
 Nyay Sahayak helps citizens create legal applications in their regional language without the need for a lawyer. Our AI-powered tool simplifies court procedures and ensures applications are filed correctly.
 
-![Nyay Sahayak Screenshot](https://via.placeholder.com/800x400?text=Nyay+Sahayak+Screenshot)
+![Nyay Sahayak Screenshot](https://github.com/Yavar10/Nyay-Sahayak/blob/main/5a44049e-72b4-42e4-a540-9d0a08fd4c95.png)
 
 ## Features
 
